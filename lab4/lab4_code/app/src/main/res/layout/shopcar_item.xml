@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/ic"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="15dp"
+           android:background="@drawable/circle"
+           android:gravity="center"
+           android:text="*"
+           android:textColor="#fff"
+           android:textSize="25dp"
+           />
+       <TextView
+           android:id="@+id/goodName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/ic"
+           android:layout_alignBottom="@+id/ic"
+           android:layout_marginLeft="30dp"
+           android:layout_toRightOf="@+id/ic"
+           android:text="名字"
+           android:textColor="#000"
+           android:textSize="18dp"/>
+       <TextView
+           android:id="@+id/cost"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/ic"
+           android:layout_alignBottom="@+id/ic"
+           android:layout_toRightOf="@id/ic"
+           android:layout_toEndOf="@+id/ic"
+           android:layout_marginLeft="180dp"
+           android:layout_marginStart="180dp"
+           android:text="dollor"
+           android:textColor="#000"
+           android:textSize="18dp"/>
+   </RelativeLayout>
+</LinearLayout>
