@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01000000"
+    android:id="@+id/appwidget"
+    android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/shoplist"
+        android:id="@+id/appwidget_image" />
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/appwidget_text"
+        android:text="当前没有任何消息"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/appwidget_image"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/appwidget_image"
+        android:layout_alignBottom="@+id/appwidget_image" />
+
+
+</RelativeLayout>
